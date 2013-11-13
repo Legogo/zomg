@@ -49,18 +49,18 @@
 			pressKey(e.keyCode);
 		}
 		
+		static private function myKeyUp(e:KeyboardEvent):void {
+			keys[e.keyCode] = false;
+			keysRelease[e.keyCode] = 2;
+			lastReleased = e.keyCode;
+		}
+		
 		static public function pressKey(keyCode:uint):void {
 			if(!keys[keyCode])	keysPress[keyCode] = 2;
 			keys[keyCode] = true;
 			
 			//justPressed.push(e.keyCode);
 			lastPressed = keyCode;
-		}
-		
-		static private function myKeyUp(e:KeyboardEvent):void {
-			keys[e.keyCode] = false;
-			keysRelease[e.keyCode] = 2;
-			lastReleased = e.keyCode;
 		}
 		
 		static public function getKeyState(keyCode:uint):Boolean {
@@ -81,7 +81,7 @@
 		}
 		
 		static public function update(evt:Event):void {
-			var i:uint
+			var i:uint = 0;
 			for (i = 0; i < keysRelease.length; i++)	if(keysRelease[i] > 0)	keysRelease[i]--;
 			for (i = 0; i < keysPress.length; i++)	if(keysPress[i] > 0)	keysPress[i]--;
 		}
