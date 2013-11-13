@@ -112,7 +112,7 @@
 		static public function set lastReleased(v:uint):void { _lastReleased = v; }
 		
 		static public function moveKeysPressed():Boolean {
-			return (keys[ZoKeysId.LEFT] || keys[ZoKeysId.RIGHT] || keys[ZoKeysId.UP] || keys[ZoKeysId.DOWN]);
+			return (keys[KeysIndex.LEFT] || keys[KeysIndex.RIGHT] || keys[KeysIndex.UP] || keys[KeysIndex.DOWN]);
 			
 		}
 	}
