@@ -1,4 +1,4 @@
-package com.aberlemont.input {
+package zomg.input {
 	public class KeysIndex {
 		
 		static public var INF:uint = 22;

@@ -1,4 +1,4 @@
-﻿package	com.aberlemont.input
+﻿package	zomg.input
 {
 	import adobe.utils.CustomActions;
 	import flash.display.Stage;
