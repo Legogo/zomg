@@ -7,10 +7,13 @@
 	import flash.geom.ColorTransform;
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
+  
 	/**
-	 * ...
-	 * @author ...
+	 * @author André Berlemont
+   * http://www.andreberlemont.com
+   * Github branch : https://github.com/Legogo/zomg.git
 	 */
+  
 	public class Color
 	{
 		public var num:uint = 0; // 0xAARRGGBB

@@ -3,10 +3,13 @@ package zomg
 	import flash.display.Stage;
 	import flash.events.Event;
 	import flash.utils.getTimer;
+  
 	/**
-	 * ...
-	 * @author ...
+	 * @author André Berlemont
+   * http://www.andreberlemont.com
+   * Github branch : https://github.com/Legogo/zomg.git
 	 */
+  
 	public class DeltaTime 
 	{
 		static public var time:Number = 0;

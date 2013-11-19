@@ -1,4 +1,13 @@
 package zomg.input {
+  
+	/**
+	 * @author André Berlemont
+   * http://www.andreberlemont.com
+   * Github branch : https://github.com/Legogo/zomg.git
+   * 
+   * http://livedocs.adobe.com/flash/9.0/ActionScriptLangRefV3/flash/ui/Keyboard.html
+	 */
+  
 	public class KeysIndex {
 		
 		static public var INF:uint = 22;

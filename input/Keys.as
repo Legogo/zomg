@@ -6,11 +6,15 @@
 	import flash.events.Event;
 	import flash.events.KeyboardEvent;
 	import flash.ui.Keyboard;
-
-	/*
-	 * http://livedocs.adobe.com/flash/9.0/ActionScriptLangRefV3/flash/ui/Keyboard.html
-	 * */
-	
+  
+  /**
+	 * @author André Berlemont
+   * http://www.andreberlemont.com
+   * Github branch : https://github.com/Legogo/zomg.git
+   * 
+   * http://livedocs.adobe.com/flash/9.0/ActionScriptLangRefV3/flash/ui/Keyboard.html
+	 */
+  
 	public class Keys
 	{
 		static private var keys:Vector.<Boolean>; // All keys

@@ -2,7 +2,13 @@
 {
 	import flash.display.Sprite;
 	import flash.geom.Point;
-	
+  
+	/**
+	 * @author André Berlemont
+   * http://www.andreberlemont.com
+   * Github branch : https://github.com/Legogo/zomg.git
+	 */
+  
 	public class Maths
 	{
 		
