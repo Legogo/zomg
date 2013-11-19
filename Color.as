@@ -13,7 +13,7 @@
 	 */
 	public class Color
 	{
-		public var num:uint = 0; // 0xXXXXXX
+		public var num:uint = 0; // 0xAARRGGBB
 		
 		public function Color(value:uint = 0, alpha:int = 255)
 		{
@@ -26,7 +26,7 @@
     }
     
 		public function set alpha(v:int):void {
-			num = rgbaToUint(getComponentValue(num, "r"), getComponentValue(num, "b"), getComponentValue(num, "b"), v);
+			num = rgbaToUint(getComponentValue(num, "r"), getComponentValue(num, "g"), getComponentValue(num, "b"), v);
 		}
 		
 		public function toString():String {
@@ -97,7 +97,7 @@
 				case "r" : return ((color & 0x00FF0000) >>> 16); break;
 				case "g" : return ((color & 0x0000FF00) >>> 8); break;
 				case "b" : return (color & 0x000000FF); break;
-				default : trace("World >> getPixelCompo error"); break;
+				default : trace("Color >> getPixelCompo error"); break;
 			}
 			
 			return -1;
